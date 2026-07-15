@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ATM Technician Tablet</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="tablet" class="hidden">
+        <div class="tablet-frame">
+            <div class="tablet-header">
+                <div class="header-left">
+                    <i class="icon">🛠️</i>
+                    <span>ATM Technician - Field Tablet</span>
+                </div>
+                <button id="closeBtn">✕</button>
+            </div>
+
+            <div class="tablet-body">
+                <div class="profile-card">
+                    <div class="profile-name" id="profileName">-</div>
+                    <div class="profile-grade" id="profileGrade">-</div>
+                    <div class="profile-status" id="profileStatus">-</div>
+                    <div class="xp-row">
+                        <span id="xpText">0 / 0 XP</span>
+                        <span id="xpNextGrade"></span>
+                    </div>
+                    <div class="xp-bar-track">
+                        <div class="xp-bar-fill" id="xpBarFill"></div>
+                    </div>
+                </div>
+
+                <div id="shiftBanner" class="shift-banner hidden"></div>
+
+                <button id="takeJobBtn" class="take-job-btn">🚐 Take Job (Get Van + Mark Location)</button>
+
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <div class="stat-value" id="totalJobs">0</div>
+                        <div class="stat-label">Total Jobs</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="successJobs">0</div>
+                        <div class="stat-label">Successful</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="totalEarned">$0</div>
+                        <div class="stat-label">Total Earned</div>
+                    </div>
+                </div>
+
+                <div class="section-title">Recent Jobs</div>
+                <div id="recentJobs" class="recent-list"></div>
+
+                <div class="section-title">Tool Shop ( Bank: <span id="bankMoney">$0</span> )</div>
+                <div id="shopList" class="shop-list"></div>
+
+                <div class="section-title">Active ATM Map ( <span id="atmCount">0</span> locations )</div>
+                <div id="atmList" class="atm-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
